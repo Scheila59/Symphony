@@ -3,23 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="CSS/style.css">
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-        {% block stylesheets %}
-
-        {% endblock %}
-
+        {% block stylesheets %}        
+        {% endblock %}      
+    
         {% block javascripts %}
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
-    </head>
-    
-        <nav>
-    <ul>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/contact">Contact</a></li>   
-        <li><a href="/apropos">A propos</a></li>    
-    </ul>
-</nav>
-    </body>
-    {% block body %}{% endblock %}
+        </head>
+        <body class="{{ body_class|default('') }}">      
+            <nav class="navbar">
+                <ul id="ul-navbar">
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/contact">Contact</a></li>   
+                    <li><a href="/apropos">A propos</a></li>
+                    <li><a href="/user">Utilisateurs</a></li>    
+                </ul>
+            </nav>
+            {% block body %}{% endblock %}
+        </body>
+        <footer>
+            <p>Made with ❤️ by Laura</p>
+            <p>© 2024 Laura</p>
+        </footer>   
 </html>

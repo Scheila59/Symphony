@@ -1,0 +1,53 @@
+body {
+    background-color: #f9f9f9; /* Couleur de fond de la page */
+    font-family: Arial, sans-serif; /* Police de la page */
+}
+
+.container {
+    max-width: 1200px; /* Largeur maximale de la conteneur */
+    margin: 0 auto; /* Centrer le conteneur */
+    padding: 20px; /* Espacement interne */
+}
+
+h1 {
+    color: #333; /* Couleur du titre */
+}
+.row {
+    display: flex; /* Utiliser flexbox pour les colonnes */
+    flex-wrap: wrap; /* Permettre le retour à la ligne */
+    gap: 20px; /* Espacement entre les cartes */
+    }
+.user-card {
+    border: 1px solid #ddd; /* Bordure des cartes */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre */
+    transition: transform 0.2s; /* Animation de transformation */
+    padding: 15px;
+}
+
+.user-card:hover {
+    transform: scale(1.05); /* Agrandir la carte au survol */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Taille de la police du titre */
+    margin-bottom: 10px; /* Espacement en bas du titre */
+}
+
+.card-text {
+    margin-bottom: 15px; /* Espacement en bas du texte */
+}
+
+.badge {
+    font-size: 0.9rem; /* Taille de la police des badges */
+    padding: 5px 10px; /* Espacement interne des badges */
+}
+
+.list-unstyled {
+    padding-left: 0; /* Supprimer le padding gauche */
+}
+
+.list-unstyled li {
+    margin-bottom: 5px; /* Espacement entre les éléments de la liste */
+    list-style: none;
+}

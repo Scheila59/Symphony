@@ -1,0 +1,59 @@
+body 
+        {
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;           
+        }
+            .navbar
+            {        
+                border-radius: 25px;             
+                background-color: #000000;
+                width: 100%;
+            }
+            #ul-navbar
+            {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .example-wrapper 
+            { 
+                margin: 1em auto; 
+                max-width: 800px; 
+                width: 95%; 
+                font: 18px/1.5 sans-serif; 
+                border: 3px solid #000000;
+                border-radius: 25%; 
+                padding: 1em; 
+            }
+
+            .example-wrapper 
+            { 
+                background: #F5F5F5; 
+                padding: 2px 6px; 
+            }
+footer 
+{       
+    display: flex;    
+    width: 100vw;
+    margin-top: auto;
+    margin-bottom: 0;
+    background: black;
+    color: rgb(230, 16, 187); 
+    justify-content: space-evenly;   
+}
+
+body.accueil {
+    background: pink;
+}
+body.contact {
+    background: rgb(58, 96, 110);
+}
+body.a-propos {
+    background: rgb(148, 94, 148);
+}
+body.user {
+    background-color: #554a4a; 
+}
+
+
